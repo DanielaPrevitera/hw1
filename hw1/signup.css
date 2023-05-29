@@ -1,0 +1,183 @@
+/* CSS code for logo animation on hover */
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #logo img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #logo img:hover {
+    animation: scale 1s;
+  }
+
+
+
+
+body{
+
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #070A21;
+    background-image: url('assets/login.jpg');
+  }
+
+  #logo{
+    border-bottom: 1px solid #d9dadc;
+    padding: 25px 0 25px;
+    background-image: url('assets/login.jpg');
+    text-align: center;
+   
+  }
+  #logo img{
+  max-width: 13%;
+  border-radius:80px;
+  }
+  
+  .overlay{
+ 
+     height: 100%;
+     width: 60%;
+ }
+ 
+ .sezione{
+
+  display: flex;
+  justify-content: center;
+  height:100%
+ }
+ 
+section{
+    background-color: rgba(0, 0, 0, 0.654);
+}
+main{
+    text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    border: 1px solid #d9dadc;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .name, .surname, .username, .email, .password, .confirm_password, .fileupload{
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.allow{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+   
+}
+
+.allow input{
+    width: 20px;
+    height: 20px;
+}
+
+.allow label{
+    margin-top: 4px;
+    margin-left: 10px; 
+    color:white;
+}
+
+form img{
+    opacity: 0;
+    width: 10px;
+    margin-right: 10px;
+}
+label{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-top:30px;
+  }
+
+form span {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    transition: opacity 0.3s ease;
+}
+
+.errorj label {
+    color: #d01b2d;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 14px;
+    color: #d01b2d;
+}
+
+.errorj img {
+    opacity: 1;
+}
+
+.errorj input, .errorj #upload {
+    border-color: #d01b2d;
+}
+#upload_original{
+    color:white;
+}
+.submit input{
+    border-radius: 50px;
+      padding: 16px 14px 18px;
+      margin-left: 15px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: 2px;
+      color: #fff;
+      background-color: darkred;
+      transition-property: background-color;
+      transition-duration: .3s;
+}
+
+.submit input:hover{
+    cursor: pointer;
+      background-color: red;
+}
+
+.signup{
+   
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color:white;
+}
+a{
+    color: darkred;
+}
+h4{
+    font-size: 29px;
+    font-weight: bold;
+    color:white;
+  }
+  

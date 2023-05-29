@@ -1,0 +1,167 @@
+/* CSS code for logo animation on hover */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo img:hover {
+  animation: scale 1s;
+}
+
+
+
+
+body{
+  
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url('assets/login.jpg');
+ 
+}
+.overlay{
+   background-color: rgba(0, 0, 0, 0.654);
+    height: 100%;
+    width: 60%;
+}
+
+.sezione{
+ display: flex;
+ justify-content: center;
+ height:100%
+}
+#logo{
+  border-bottom: 1px solid #d9dadc;
+  padding: 25px 0 25px;
+  background-image: url('assets/login.jpg');
+  text-align: center;
+ 
+}
+#logo img{
+max-width: 13%;
+border-radius:80px;
+
+
+}
+
+.error{
+  display: block;
+  background-color: #e22134;
+  padding: 14px 14px 12px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  width: 100%;
+}
+
+form{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9dadc;
+  border-top:30px;
+}
+
+main{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.username, .password{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  border: 1px solid #d9dadc;
+  margin-top: 5px;
+  font-size: 16px;
+  
+}
+
+.submit-container{
+  display: flex;
+  align-items: center;
+}
+
+.login-btn{
+  width: 50%;
+  padding-right: 15px;
+}
+
+.login-btn input{
+  border-radius: 50px;
+  padding: 16px 14px 18px;
+  margin-left: 15px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: darkred;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+.login-btn input:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.signup{
+  margin: 10px 0;
+}
+
+h4{
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+}
+
+.signup-btn-container{
+  padding-right: 30px;
+}
+
+.signup-btn{
+  display: block;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 16px 14px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+  letter-spacing: 2px;
+  width: 100%;
+  transition-property: background-color, color;
+  transition-duration: .3s;
+  background-color: darkred;
+}
+
+.signup-btn:hover{
+  border-radius: 50px;
+  background-color: red;
+  color: #fff;
+  padding: 16px 14px 18px;
+}
+
